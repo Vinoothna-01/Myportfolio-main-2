@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Vinoothna Dudam</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Vinoothna Dudam</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vinoothna Dudam</h1>
+        <p class="section__text__p2">Master's Student in Computer Science</p>
+        <div class="contact-details">
+          <p>vdudam@students.kennesaw.edu | (470) 982-5686</p>
+        </div>
+        <div class="text-container">
+          <p class="about-text">
+            Graduate student at Kennesaw State University pursuing Master of Science in Computer Science with a 3.7 GPA. 
+            Experienced in AI, data analytics, and full-stack development with hands-on experience from Goldman Sachs and CDAC Organisation.
+          </p>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vinoothna-dudam-55274b200/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Vinoothna-01'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">Education & Background</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <!-- Education Section -->
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Kennesaw State University, Marietta, GA</h3>
+            <p><strong>Master of Science in Computer Science</strong></p>
+            <p>Aug 2024 – May 2026 | GPA: 3.7/4.0</p>
+            <p><strong>Relevant Coursework:</strong> Artificial Intelligence, Big Data Analytics, Database Systems, Machine Vision</p>
+          </div>
+
+          <!-- Technical Skills Section -->
+          <div class="details-container">
+            <img src="./assets/checkmark.png" alt="Skills icon" class="icon" />
+            <h3>Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Programming & Backend:</h4>
+                <p>Python, Java, SQL, REST APIs, Spring Boot, GraphQL</p>
+              </div>
+              <div class="skill-category">
+                <h4>AI & Data:</h4>
+                <p>Cursor AI, Machine Learning, Data Cleaning, Exploratory Data Analysis</p>
+              </div>
+              <div class="skill-category">
+                <h4>Frontend & Mobile:</h4>
+                <p>React Native, Component-Based Architecture, UI Integration</p>
+              </div>
+              <div class="skill-category">
+                <h4>Tools:</h4>
+                <p>Git, Postman, Power BI, Tableau, JIRA, Google Workspace, MS Office</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <h1 class="title">Professional Journey</h1>
+      <div class="timeline-container">
+        <div class="timeline">
+          <!-- Timeline Item 1 - Current -->
+          <div class="timeline-item active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2025 – Present</div>
+              <h3>Graduate Teaching Assistant</h3>
+              <h4>Kennesaw State University, Marietta, GA</h4>
+              <div class="timeline-description">
+                <p>• Designed and delivered interactive lab sessions and visual learning materials</p>
+                <p>• Coordinated communication and academic support for 80+ students</p>
+                <p>• Utilized Microsoft tools for reporting, scheduling, and collaboration</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2024 – Jun 2024</div>
+              <h3>Data Analyst Intern</h3>
+              <h4>CDAC Organisation, Hyderabad, India</h4>
+              <div class="timeline-description">
+                <p>• Reviewed, cleaned, validated, and maintained large structured datasets</p>
+                <p>• Developed SQL queries to identify anomalies and verify records</p>
+                <p>• Created technical documentation to support scalable data workflows</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Jun 2023 – Aug 2023</div>
+              <h3>Summer Analyst</h3>
+              <h4>Goldman Sachs, Hyderabad, India</h4>
+              <div class="timeline-description">
+                <p>• Engineered and optimized RESTful APIs using Java and Spring Boot</p>
+                <p>• Improved system reliability and scalability through structured backend development</p>
+                <p>• Produced clear technical documentation for cross-team communication</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+        
+        <section id="projects">
+          <p class="section__text__p1">Browse My Recent</p>
+          <h1 class="title">Projects & Innovations</h1>
+          
+          <div class="projects-grid">
+            <!-- Featured Project - Socialz -->
+            <div class="project-card featured">
+              <div class="project-header">
+                <div class="project-status">Founder & Developer</div>
+              </div>
+              <h3 class="project-title">Socialz</h3>
+              <p class="project-subtitle">Cross-Platform Mobile Application</p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Cursor AI</span>
+                <span class="tech-tag">Analytics</span>
+              </div>
+              <p class="project-description">
+                Designed and developed a scalable mobile application with frontend architecture. 
+                Utilized AI to accelerate development and integrated analytics for data-driven decisions.
+              </p>
+              <div class="project-glow"></div>
+            </div>
+
+            <!-- Hackathon Project -->
+            <div class="project-card hackathon">
+              <div class="project-header">
+                <div class="project-status">Team Collaborator</div>
+              </div>
+              <h3 class="project-title">Code to Give</h3>
+              <p class="project-subtitle">Morgan Stanley Hackathon</p>
+              <div class="project-tech">
+                <span class="tech-tag">Agile</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">AI Insights</span>
+              </div>
+              <p class="project-description">
+                Collaborated in Agile teams to develop technology solutions for nonprofits, 
+                combining data analysis with AI-supported insights and visual storytelling.
+              </p>
+              <div class="project-glow"></div>
+            </div>
+
+            <!-- ML Project -->
+            <div class="project-card ml-project">
+              <div class="project-header">
+                <div class="project-status">
+                  <a href="https://github.com/Vinoothna-01/FakeNewsDetection_MP-II" target="_blank" class="github-link">
+                    View Code →
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Fake News Detection</h3>
+              <p class="project-subtitle">NLP & Machine Learning</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">ML</span>
+              </div>
+              <p class="project-description">
+                Implemented natural language processing techniques to identify and classify 
+                fake news articles with high accuracy using advanced ML algorithms.
+              </p>
+              <div class="project-glow"></div>
+            </div>
+
+            <!-- Vision Project -->
+            <div class="project-card vision-project">
+              <div class="project-header">
+                <div class="project-status">
+                  <a href="https://github.com/Vinoothna-01/Integrated-Deep-Vision-System" target="_blank" class="github-link">
+                    View Code →
+                  </a>
+                </div>
+              </div>
+              <h3 class="project-title">Deep Vision OCR</h3>
+              <p class="project-subtitle">Computer Vision System</p>
+              <div class="project-tech">
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">OCR</span>
+                <span class="tech-tag">Healthcare</span>
+              </div>
+              <p class="project-description">
+                Advanced text extraction system using deep learning and computer vision 
+                for healthcare document processing and automated data extraction.
+              </p>
+              <div class="project-glow"></div>
+            </div>
+          </div>
+
+          <!-- Certifications Section -->
+          <div class="certifications-section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="cert-container">
+              <div class="cert-item">
+                <span>Career Essentials in Data Analysis — Microsoft</span>
+              </div>
+              <div class="cert-item">
+                <span>Introduction to Career Skills in Data Analytics</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+        
+        <section id="contact" class="contact-section">
+          <p class="section__text__p1">Get in Touch</p>
+          <h1 class="title">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:vdudam@students.kennesaw.edu">vdudam@students.kennesaw.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com/in/vinoothna-dudam-55274b200/">LinkedIn</a></p>
+            </div>
+            <div class="contact-info-container">
+              <span class="phone-icon">📞</span>
+              <p>(470) 982-5686</p>
+            </div>
+          </div>
+        </section>
+        
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2026 Vinoothna Dudam. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+        
